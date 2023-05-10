@@ -62,16 +62,17 @@ namespace tugasOOPsmt4
                 double r, luaslingkaran;
                 Console.WriteLine("masukan panjang jari-jari");
                 r = double.Parse(Console.ReadLine());
-                luaslingkaran = Math.PI*r*r;
+                luaslingkaran = Math.Round (Math.PI,2)*r*r;
                 Console.WriteLine("\n===HASIL HITUNG LUAS LINGKARAN===");
-                Console.WriteLine("Luas lingkaran adalah {0}:", luaslingkaran);
+                Console.WriteLine("Luas lingkaran adalah {0}",(Math.Round(luaslingkaran,2)));
                 Console.WriteLine("press any key for details");
                 Console.ReadKey(true);              
-                Console.Write("\n PI = {0}", Math.PI);
+                Console.Write("\n PI = {0}",Math.Round( Math.PI,2));
                 Console.Write("\n r = {0}", r);
                 Console.Write("\n Rumus Luas Lingkaran = PI x r x r");
-                Console.Write("\n Luas Lingkaran = {0}", (Math.PI + " x " + r + " x " + r));
+                Console.Write("\n Luas Lingkaran = {0}", (Math.Round (Math.PI,2) + " x " + r + " x " + r));
                 Console.Write("\n Luas = {0} ",luaslingkaran);
+                
             }
             else
             {
